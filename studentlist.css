@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
+
+/*//////////////////////////////////////////////////*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 100vw;
+}
+.filtButtons {
+  text-align: center;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: aliceblue;
+}
+body > h1 {
+  text-align: center;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+}
+header > body {
+  background-color: aliceblue;
+}
+
+.gryffindor {
+  background-color: #ce3a0a;
+  color: #fdb02e;
+}
+
+.hufflepuf {
+  background-color: #ffc02a;
+  color: #0b0000;
+}
+
+.ravenclaw {
+  background-color: #395f9d;
+  color: #e9ba36;
+}
+
+.slytherin {
+  background-color: #588c39;
+  color: #c0b1c6;
+}
+
+.list-area {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding: 30px auto 30px;
+}
+
+.each-student {
+  border: 1px solid black;
+  display: flex;
+  margin: 1px;
+  justify-content: space-between;
+}
+.Name {
+  color: black;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.House {
+  font-family: "Nothing You Could Do", cursive;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+}
+img {
+  height: 30px;
+}
+/*MMMOOODDDAAALLL*/
+
+/*//////////////////////DDDRRROOPPDDDOOOWWNN*/
+/* Dropdown Button */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  margin: 0px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: aliceblue;
+  color: black;
+}
+
+@media screen and (max-width: 696px) {
+  .list-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body > h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .list-area {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body > h1 {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .list-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  body > h1 {
+    font-size: 44px;
+  }
+}
