@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
-@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do");
-
-/*//////////////////////////////////////////////////*/
+@import url("https://fonts.googleapis.com/css?family=Lora");
 * {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Gloria Hallelujah", cursive;
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  box-sizing: border-box;
+}
+html {
+  background-color: #323232;
+  color: #cdcdcd;
 }
 
 nav {
@@ -17,11 +19,7 @@ nav {
 .filtButtons {
   text-align: center;
 }
-* {
-  margin: 0px;
-  padding: 0px;
-  background-color: aliceblue;
-}
+
 body > h1 {
   text-align: center;
   text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
@@ -59,22 +57,17 @@ header > body {
 }
 
 .each-student {
-  border: 1px solid black;
+  border: 1px solid;
   display: flex;
   margin: 1px;
   justify-content: space-between;
 }
 .Name {
-  color: black;
   text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
   font-size: 1em;
   font-family: "Gloria Hallelujah", cursive;
 }
 
-.House {
-  font-family: "Nothing You Could Do", cursive;
-  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
-}
 img {
   height: 30px;
 }

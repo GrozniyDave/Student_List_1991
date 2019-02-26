@@ -2,22 +2,16 @@
 
 window.addEventListener("DOMContentLoaded", getJSON);
 
-const baselink = "http://petlatkea.dk/2019/hogwarts/students.json ";
 const Template = document.querySelector("#TempNames").content;
 const parent = document.querySelector(".list-area");
 
 function getJSON() {
-  console.log("getJSON");
-  function loadAll() {
-    fetch(baselink)
-      .then(e => e.json())
-      .then(displayList);
-  }
-  loadAll();
+  fetch("students1991.json")
+    .then(e => e.json())
+    .then(displayList);
 }
 
 function displayList(data) {
-  console.log("displayList");
   data.forEach(hero => {
     const clone = Template.cloneNode(true);
     const name = hero.fullname;
